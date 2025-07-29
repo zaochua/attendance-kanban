@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from "node:url";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [  vue()],
-  base:"./",
+  base: process.env.NODE_ENV === 'production' ? '/attendance-kanban/' : './',
   resolve: {
     alias: {
       //别名，给./src目录，起个别名@，在文件中就可以使用@替换src了

@@ -249,9 +249,9 @@ const dksjOptions = ref({
     nameTextStyle: {
       fontSize: 18, // 字体大小
       color: "#666",
-      padding: [0, 20, 10, 0],
+      padding: [0, 0, 10, 30],
     },
-    name: "数量", // y轴名称
+    name: "工号去重计数", // y轴名称
   },
   series: [
     {

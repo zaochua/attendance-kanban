@@ -6,15 +6,15 @@
         <div class="text-[#463881] text-[50px] font-bold my-[10px]">54</div>
       </div>
     </el-card>
-    <el-card shadow="always" class="cursor-pointer" @click="handleClick('迟到次数')">
+    <el-card shadow="always" class="cursor-pointer" @click="handleClick('迟到人次')">
       <div class="flex flex-col items-center justify-center h-[200px]">
-        <div class="text-[32px]">迟到次数</div>
+        <div class="text-[32px]">迟到人次</div>
         <div class="text-[#463881] text-[50px] font-bold my-[10px]">322</div>
       </div>
     </el-card>
-    <el-card shadow="always" class="cursor-pointer" @click="handleClick('早退人数')">
+    <el-card shadow="always" class="cursor-pointer" @click="handleClick('早退人次')">
       <div class="flex flex-col items-center justify-center h-[200px]">
-        <div class="text-[32px]">早退人数</div>
+        <div class="text-[32px]">早退人次</div>
         <div class="text-[#463881] text-[50px] font-bold my-[10px]">4</div>
       </div>
     </el-card>
@@ -46,7 +46,6 @@
       <el-table :data="tableData" style="width: 100%">
         <el-table-column prop="name" label="姓名" />
         <el-table-column prop="department" label="部门" />
-        <el-table-column prop="time" label="时间" />
         <el-table-column prop="numberOfTimes" label="次数" />
       </el-table>
     </el-dialog>
